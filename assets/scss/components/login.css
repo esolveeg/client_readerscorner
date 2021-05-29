@@ -1,0 +1,47 @@
+.login {
+  border: 1px solid var(--border-color);
+  width: 100%;
+  padding: 40px;
+  background-color: var(--gray-bg);
+}
+
+.login .header {
+  color: #000;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.login form {
+  display: none;
+}
+
+.login form .v-input {
+  margin: 30px 0;
+}
+
+.login form .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 60px;
+}
+
+.login.active {
+  background-color: #fff;
+}
+
+.login.active form {
+  display: block;
+}
+
+.login.active .disabled {
+  display: none;
+}
+
+.login .disabled p {
+  font-size: 14px;
+}

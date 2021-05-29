@@ -1,0 +1,27 @@
+@media (max-width: 640px) {
+  .sidebar {
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar__categories {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar__bestseller {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar__bestseller .bestseller-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sidebar__bestseller .bestseller-wrapper div:not(:last-child) {
+    margin-right: 10px;
+  }
+}

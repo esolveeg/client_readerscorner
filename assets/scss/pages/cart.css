@@ -1,0 +1,14 @@
+.cart__tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cart__tabs .v-tab {
+  min-width: 200px;
+}
+
+.cart__content {
+  padding: 20px 0;
+}

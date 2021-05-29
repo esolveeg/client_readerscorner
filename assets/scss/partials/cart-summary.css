@@ -1,0 +1,34 @@
+.cartsummary {
+  margin-right: 20px;
+}
+
+@media (max-width: 640px) {
+  .cartsummary {
+    margin-right: 0;
+  }
+}
+
+.cartsummary__wrapper {
+  background-color: #fff;
+}
+
+.cartsummary__total {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--gray-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartsummary__total span {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.cartsummary__total h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}

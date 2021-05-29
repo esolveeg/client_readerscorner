@@ -1,0 +1,142 @@
+.billing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  grid-template-rows: auto auto;
+  grid-template-areas: "billing payment";
+}
+
+@media (max-width: 640px) {
+  .billing {
+    grid-template-areas: "billing billing" "payment payment";
+    padding: 20px;
+  }
+}
+
+.billing__form {
+  grid-area: billing;
+}
+
+@media (max-width: 640px) {
+  .billing__form {
+    margin-bottom: 20px;
+  }
+}
+
+.billing__form .v-input:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.billing__payment {
+  grid-area: payment;
+}
+
+.billing__payment .tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+}
+
+@media (max-width: 400px) {
+  .billing__payment .tabs {
+    grid-column-gap: 30px;
+  }
+}
+
+.billing__payment .tabs .tab {
+  border: 1px solid var(--border-color);
+  color: var(--gray-font);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  transition: var(--primary-transition);
+}
+
+.billing__payment .tabs .tab svg {
+  fill: var(--gray-font);
+  width: 40px;
+}
+
+.billing__payment .tabs .tab svg, .billing__payment .tabs .tab .v-icon {
+  margin-right: 20px;
+}
+
+.billing__payment .tabs .tab.active {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.billing__payment .tabs .tab.active svg {
+  fill: #fff;
+  width: 40px;
+}
+
+.billing__payment .tabs .tab.active svg svg {
+  fill: #fff;
+  width: 40px;
+}
+
+.billing__payment .tabs .tab:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.billing__payment .tabs .tab:hover svg {
+  fill: #fff;
+  width: 40px;
+}
+
+.billing__payment .tabs .tab:hover svg svg {
+  fill: #fff;
+  width: 40px;
+}
+
+.billing__submit {
+  grid-area: btn;
+}
+
+.billing__submit.btn {
+  color: #fff !important;
+  min-width: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+  .billing__submit.btn {
+    width: 100%;
+  }
+}
+
+.billing .header {
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  font-size: 24px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.billing .header span {
+  font-size: 16px;
+  color: var(--gray-font);
+  text-transform: lowercase;
+}
+
+.billing .header span a {
+  transition: var(--primary-transition);
+  color: var(--primary-color) !important;
+}
+
+.billing .header span a:hover {
+  color: #fff !important;
+}

@@ -1,0 +1,27 @@
+.sidebar{
+    @media (max-width: 640px){
+        max-width: 100vw;
+    }
+    &__categories{
+        @media (max-width: 640px){
+            display: none;
+        }
+    }
+    &__bestseller{
+        @media (max-width: 640px){
+            padding: 0 10px;
+        }
+        & .bestseller-wrapper{
+            @media (max-width: 640px){
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+               & div{
+                    &:not(:last-child){
+                        margin-right: 10px;
+                    }
+               }
+            }
+        }
+    }
+
+}

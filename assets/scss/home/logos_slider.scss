@@ -1,0 +1,13 @@
+.logos-slider{
+    margin-top: 20px;
+    @media (max-width: 640px){
+        padding: 20px;
+    } 
+    & img{
+        max-width: 200px;
+        min-width: 100px;
+        @media (max-width: 400px){
+            max-width: 150px;
+        } 
+    }
+}

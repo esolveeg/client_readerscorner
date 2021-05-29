@@ -1,0 +1,178 @@
+.os{
+
+    & .v-carousel__item{
+        height: 350px !important;
+        @media (max-width: 640px){
+            height: 200px !important;
+
+        }
+    }
+    @media (max-width: 640px){
+        max-width: 100vw;
+    }
+    &__parent{
+        position: relative;
+        height: 350px;
+        @media (max-width: 640px){
+            height: 200px;
+
+        }
+
+    }
+    &__indicators{
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        & span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 40px;
+            cursor: pointer;
+            transition: var(--primary-transition);
+            @media (max-width: 640px){
+                height: 30px;
+            }
+            &::before{
+                content: "";
+                width: 3px;
+                height: 80%;
+                background-color:#fff;
+            }
+            &:hover{
+                &::before{
+                    background-color: #000;
+                }
+            }
+            &.active{
+                &::before{
+                    background-color: #000;
+                }
+            }
+            &:not(:last-child){
+                margin-right: 2px;
+            }
+        }
+    }
+    &__slider{
+        width: 100%;
+        height: 350px;
+        @media (max-width: 640px){
+            height: 200px;
+
+        }
+        & .image{
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
+    }
+    &__wrapper{
+        position: relative;
+        padding-left: 55%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #fff;
+        @media (max-width: 640px){
+            padding-left:50%
+        }
+        & .percent-off{
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-transform: uppercase;
+            background-color: #fe5353;
+            & span{
+                color: #fff;
+                padding: 15px 20px;
+            }
+        }
+        & .content{
+            & .tag{
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 800;
+                color: #000;
+                margin-bottom: 30px;
+                @media (max-width: 640px){
+                    margin-bottom: 10px;
+                }
+            }
+
+            & .counter{
+                display: flex;
+                margin-bottom: 30px;
+                @media (max-width: 640px){
+                    margin-bottom: 10px;
+                }
+                & div{
+                    width: 70px;
+                    height: 70px;
+                    border: 1px solid var(--border-color);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    @media (max-width: 640px){
+                        width: 50px;
+                        height: 50px;
+                    }
+                    &:not(:last-child){
+                        margin-right: 10px;
+                        @media (max-width: 640px){
+                            margin-right: 5px;
+                        }
+                        
+                    }
+
+                    & span{
+                        display: block;
+                        color: #000;
+                        font-size: 14px;
+                        @media (max-width: 640px){
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            & .price{
+                margin-bottom: 10px;
+
+                & del{
+                    color: #fff;
+                    margin-right: 10px;
+                }
+                & span{
+                    color: #000;
+                }
+            }
+
+            & .show_more{
+                font-size: 14px;
+                color: #212626;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.slider-item{
+    
+    & .image{
+        background-image:url('../../images/02.png');
+    }
+    &-1{
+        & .image{
+            background-image:url('../../images/01.png');
+        }
+    }
+    &-2{
+        & .image{
+            background-image:url('../../images/03.png');
+        }
+    }
+}

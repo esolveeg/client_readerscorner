@@ -1,0 +1,81 @@
+.dcp__wrapper {
+  display: flex;
+  position: relative;
+  padding: 30px 10px 30px 70px;
+}
+
+.dcp__remove {
+  color: #fff !important;
+  width: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.dcp__remove span {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 10px;
+  height: 10px;
+}
+
+.dcp__image {
+  margin-right: 40px;
+  min-width: 90px;
+  transition: var(--primary-transition);
+}
+
+.dcp__image:hover {
+  transform: scale(1.1);
+}
+
+.dcp__content {
+  min-width: 150px;
+}
+
+.dcp__content-title {
+  font-size: 16px;
+  font-weight: 600;
+  max-height: 53px;
+  overflow: hidden;
+  transition: var(--primary-transition);
+}
+
+.dcp__content-title:hover {
+  color: var(--primary-color);
+}
+
+.dcp__content-author {
+  font-size: 14px;
+}
+
+.dcp__content .input {
+  width: 110px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.dcp__content .input i.v-icon:not(:last-child) {
+  margin-right: 15px;
+}
+
+.dcp__content .input span {
+  margin-right: 15px;
+}
+
+.dcp .no-items {
+  text-align: center;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
