@@ -1,0 +1,18 @@
+.nav-filters{
+    margin-top: 10px;
+    & .v-expansion-panel{
+        &::before{
+            box-shadow: none !important;
+        }
+        &:last-child{
+            margin-bottom:30px;
+        }
+    }
+    & .v-expansion-panel-header{
+        border-bottom: 1px solid var(--border-color);
+    }
+    & .header-2{
+        display: none;
+    }
+
+}

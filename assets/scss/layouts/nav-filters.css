@@ -1,0 +1,19 @@
+.nav-filters {
+  margin-top: 10px;
+}
+
+.nav-filters .v-expansion-panel::before {
+  box-shadow: none !important;
+}
+
+.nav-filters .v-expansion-panel:last-child {
+  margin-bottom: 30px;
+}
+
+.nav-filters .v-expansion-panel-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-filters .header-2 {
+  display: none;
+}

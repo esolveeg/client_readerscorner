@@ -1,0 +1,19 @@
+.breadcrumbs{
+    background-color: var(--gray-bg);
+    color: var(--gray-font);
+    padding: 10px 0;
+    @media (max-width: 640px) {
+        padding: 10px;
+    }
+    &__list{
+        display: flex;
+        & li{
+            &:not(:first-child){
+                &::before{
+                    content: ">";
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.completed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  padding: 10px 0;
+}
+
+.completed .header {
+  font-size: 40px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.completed p {
+  font-size: 16px;
+  max-width: 50%;
+  text-align: center;
+  color: #333;
+}

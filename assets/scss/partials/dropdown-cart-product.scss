@@ -1,0 +1,86 @@
+.dcp{
+    // padding:30px 10px 30px 70px;
+    &__wrapper{
+        display: flex;
+        position: relative;
+    padding:30px 10px 30px 70px;
+
+    }
+    &__remove{
+        color: #fff !important;
+        width: 30px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 15px;
+        & span{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            width: 10px;
+            height: 10px;
+        }
+    }
+    &__image{
+        margin-right: 40px;
+        min-width: 90px;
+       transition: var(--primary-transition);
+       &:hover{
+           transform: scale(1.1);
+       }
+        
+    }
+    &__content{
+        min-width: 150px;
+        &-title{
+            font-size: 16px;
+            font-weight: 600;
+            // color: #fff;
+            max-height: 53px;
+            overflow: hidden;
+            transition: var(--primary-transition);
+            &:hover{
+                color: var(--primary-color);
+            }
+        }
+        &-author{
+            // color:#fff;
+            font-size: 14px;
+        }
+        &-price{
+            & del , span{
+                // color:#eae5e5 !important
+            }
+        }
+        & .input{
+            width: 110px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            & i.v-icon{
+                // color: #fff;
+                &:not(:last-child){
+                    margin-right: 15px;
+                }
+            }
+            & span{
+                margin-right: 15px;
+                // color: #fff !important;
+            }
+        }
+    }
+    & .no-items{
+        text-align: center;
+        width: 300px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // color: #fff;
+    }
+}

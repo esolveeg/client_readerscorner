@@ -1,0 +1,88 @@
+.product{
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 50px;
+        padding: 20px 0;
+        @media (max-width: 640px) {
+            padding:20px;
+            grid-template-columns: 1fr;
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+        background-color: var(--gray-bg);
+        @media (max-width: 640px) {
+            margin-bottom: 20px;
+        }
+        & figure{
+            --book-shadow: 5px 10px 10px rgba(0, 0, 0, 0.7);
+        }
+    }
+    &__details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-categories{
+            display: flex;
+            align-items: center;
+            color: var(--gray-font);
+            & li{
+                text-transform: capitalize;
+                &:not(:first-child){
+                    &::before{
+                        content: ">";
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+        &-title{
+            font-size: 32px;
+            font-weight: bold;
+            color: #000;
+            text-transform: uppercase;
+            transition: var(--transition);
+            @media (min-width: 460px){
+                padding-right: 30%;
+                line-height: 40px;
+            }
+            &:hover{
+                color: var(--primary-color)
+            }
+        } 
+        &-price{
+            font-weight: bold;
+        }  
+        &-description{
+            font-size: 14px;
+            color: var(--gray-font) !important;
+        }
+        &-qty{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            &-wrapper{
+                max-width: 300px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                & span{
+                    color:var(--gray-font);
+                    margin-right:30px
+                }
+                & .input{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    & .v-text-field__slot{
+                        width: 20% !important;
+                    }
+                }
+            }
+        }
+    }
+
+}

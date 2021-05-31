@@ -1,0 +1,151 @@
+.product {
+  transition: all .3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .product:hover {
+    border: 1px solid black;
+  }
+  .product:hover .product__atc {
+    height: 50px;
+    opacity: 1;
+  }
+  .product:hover .product__atc svg {
+    opacity: 1;
+  }
+  .product:hover .product__atc span {
+    opacity: 1;
+  }
+  .product:hover .product__title h3 {
+    height: auto;
+  }
+  .product:hover .product__title, .product:hover .product__price {
+    color: var(--primary-color);
+  }
+}
+
+.product__wrapper {
+  padding: 30px 10px;
+}
+
+@media (max-width: 640px) {
+  .product__wrapper {
+    padding: 30px 0;
+  }
+}
+
+.product__img {
+  padding: 10px 40px;
+  background-color: var(--primary-gray);
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .product__img {
+    padding: 10px 20px;
+  }
+}
+
+.product__title {
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  transition: all .3s ease-in-out;
+}
+
+.product__title h3 {
+  font-style: 22px;
+  transition: all .3s ease-in-out;
+  font-weight: 600;
+  height: 50px;
+  overflow: hidden;
+}
+
+.product__price {
+  text-align: center;
+  font-size: 14px;
+}
+
+.product__atc {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  height: 0;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .product__atc {
+    opacity: 1;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+.product__atc:hover {
+  background-color: #000;
+}
+
+.product__atc svg {
+  width: 30px;
+  fill: #fff;
+  margin-right: 10px;
+  transition: all .8s ease-in-out;
+  opacity: 0;
+}
+
+@media (max-width: 640px) {
+  .product__atc svg {
+    opacity: 1;
+  }
+}
+
+.product__atc span {
+  opacity: 0;
+  transition: all .8s ease-in-out;
+}
+
+@media (max-width: 640px) {
+  .product__atc span {
+    opacity: 1;
+  }
+}
+
+.product .label {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fdba00;
+  color: #fff;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .product .label {
+    left: 3px;
+    padding: 5px;
+  }
+}
+
+.product .label span {
+  line-height: 1;
+}

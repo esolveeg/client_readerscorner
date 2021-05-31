@@ -1,0 +1,103 @@
+.history{
+    & .add_new{
+        text-align: right;
+        cursor: pointer;
+        &:hover{
+            & .v-icon{
+                background-color: var(--primary-color);
+                color:#fff;
+            }
+        }
+        & .v-icon{
+            transition: var(--primary-transition);
+            font-size: 40px;
+            border: 1px solid var(--primary-color);
+            color:var(--primary-color);
+            padding:10px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+    }
+    &__details{
+        border: solid 1px #000;
+        padding: 50px 60px;
+        margin-bottom: 50px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        transition: var(--primary-transition);
+        @media (max-width: 640px) {
+            height: 140px;
+            padding: 10px 20px;
+        }
+        & .address-title{
+            @media (max-width: 640px){
+                height: 20px;
+                overflow: hidden;
+            }
+        }
+        & .close{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: #333;
+            visibility: hidden;
+            &:hover{
+                color:red !important;
+                transform: scale(1.1);
+            }
+
+        }
+        & .content{
+            visibility: hidden;
+        }
+        & .btn-more {
+            @media (max-width: 640px) {
+                margin-top: 20px;
+            }
+            & .btn{
+                color:#fff !important;
+            }
+        }
+            
+        &.active{
+            height: auto;
+            & .content , & .close{
+                visibility: visible;
+            }
+            & .btn-more{
+                visibility: hidden;
+                margin-top: 0;
+            }
+        }
+        
+        &--box--1{
+            display: flex;
+            width: 34%;
+            justify-content: space-between;   
+        }
+        &--box--2{
+            display: flex;
+            width: 50%;
+            margin-top: 30px;
+            // :not(:last-child){
+            //     margin-right: 200px;
+            // }
+            justify-content: space-between;
+        }
+        &--button{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            & .details--button{
+                padding: 10px 100px;
+                font-weight: bold;
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+
+   
+}
