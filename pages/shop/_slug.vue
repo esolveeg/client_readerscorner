@@ -116,15 +116,15 @@ export default {
                     qty:this.cartCount
                 }
                 this.$store.dispatch('shop/create' , payload)
-                window.localStorage.removeItem('product')
-                window.localStorage.removeItem('qty')
-                window.localStorage.setItem('product' , product)
-                window.localStorage.setItem('qty' , 1)
+                // window.localStorage.removeItem('product')
+                // window.localStorage.removeItem('qty')
+                // window.localStorage.setItem('product' , this.product.isbn)
+                // window.localStorage.setItem('qty' , 1)
             } else {
-                window.localStorage.removeItem('product')
-                window.localStorage.removeItem('qty')
-                window.localStorage.setItem('product' , this.product.isbn)
-                window.localStorage.setItem('qty' , 1)
+                // window.localStorage.removeItem('product')
+                // window.localStorage.removeItem('qty')
+                // window.localStorage.setItem('product' , this.product.isbn)
+                // window.localStorage.setItem('qty' , 1)
                 const snackbar = {
                     active : true,
                     text: 'Please login to be able to add items to your cart'
